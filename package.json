@@ -1,0 +1,13 @@
+{
+  "name": "superagendador-front-end-test",
+  "version": "1.0.0",
+  "description": "superagendador-front-end-test",
+  "main": "index.js",
+  "repository": "https://github.com/thayllachristine/superagendador-front-end-test.git",
+  "author": "Thaylla Christine",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.29.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
