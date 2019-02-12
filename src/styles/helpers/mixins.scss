@@ -1,0 +1,37 @@
+//size
+@mixin width ($width) {
+    width: $width;
+}
+
+@mixin height ($heigth) {
+    height: $heigth;
+}
+
+@mixin margin ($margin) {
+    margin: $margin;
+}
+
+@mixin padding ($padding) {
+    padding: $padding;
+}
+
+@mixin borderRadius ($size) {
+    border-radius: $size
+}
+
+//flex
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+//fonts
+@mixin fontSize ($size) {
+    font-size: $size;
+}
+
+
