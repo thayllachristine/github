@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './index.scss'
+import Home from './pages/home.jsx';
+
 export default class App extends Component {
-  render() {
-    return console.log("tá funcionado")
-  }
+  render() { return <Home /> }
 }
