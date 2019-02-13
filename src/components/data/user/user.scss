@@ -1,0 +1,46 @@
+@import './../../../styles/helpers/variables.scss';
+@import './../../../styles/helpers/mixins.scss';
+@import './../../../styles/helpers/placeholders.scss';
+
+.user{  
+    // @include width(px);
+    @include height(125px);
+    @include flexbox;
+    @extend %justContentCenter;
+    @extend %alignItemsCenter;
+    
+    &__avatar { 
+        @include width(75px);
+        @include height(75px);
+        @include borderRadius(100%);
+        @extend %alignContentCenter;
+
+        @media (min-width: 768px) {
+            @include width(100px);
+            @include height(100px);
+        }
+    }
+
+    &__infos {
+        @include padding(10px);
+        @include flexbox;
+        @extend %justContentCenter;
+        @extend %directionColumn;
+    }
+
+    &__name,
+    &__bio {
+        @include width(175px);
+    }
+    
+    &__name {
+        @include fontSize(16px);
+        font-weight: $bold;
+        color: $gray5;
+    }
+
+    &__bio {
+        @include fontSize(12px);
+        color: $gray;
+    }
+}
