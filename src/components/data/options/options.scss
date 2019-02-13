@@ -1,0 +1,55 @@
+@import './../../../styles/helpers/variables.scss';
+@import './../../../styles/helpers/mixins.scss';
+@import './../../../styles/helpers/placeholders.scss';
+
+.options { 
+    @include flexbox;
+
+    &__1st,
+    &__2nd {
+        @include width(50%);
+        @include height(45px);
+        @include flexbox;
+        @extend %justContentCenter;
+        @extend %alignItemsCenter;
+        @include fontSize(12px);
+        border-bottom: 1px solid #ccc;
+
+        @media (min-width: 768px) {
+            @include width(25%);
+        }
+
+        &_selected {
+            @include width(50%);
+            @include height(45px);
+            @include flexbox;
+            @extend %justContentCenter;
+            @extend %alignItemsCenter;
+            border-bottom: 2.5px solid $orange;
+        }
+    }
+    
+    &__repo {
+        @extend %bold;
+        @include fontSize(14px);    
+    }
+
+    &__numbers {
+        @include width(25px);
+        @include height(20px);
+        @include margin(0 5px);
+        @include borderRadius(10px);
+        
+        color: $gray3;
+        background-color: $gray1;
+        opacity: 0.73;
+
+        @include flexbox;
+        @extend %justContentCenter;
+        @extend %alignItemsCenter;
+
+        > p {
+            @include fontSize(12px);
+        }
+    }
+}
