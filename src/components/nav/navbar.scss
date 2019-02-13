@@ -1,0 +1,19 @@
+@import './../../styles/helpers/variables.scss';
+@import './../../styles/helpers/mixins.scss';
+@import './../../styles/helpers/placeholders.scss';
+
+.navbar {
+    @include padding(5px 10px);
+    background-color: $gray5;
+    @include flexbox;
+    @extend %alignItemsCenter;
+
+    & p {
+        @include padding(10px);
+        color: $white;
+
+        & span {
+            font-weight: $bold;
+        }
+    }
+}

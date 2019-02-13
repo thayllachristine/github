@@ -8,7 +8,7 @@ export default class Navbar extends Component {
             <nav className='navbar'>
                 <img src={logo} alt='Logo do GitHub' className='navbar__logo' />
                 <p className='navbar__title'>
-                    <span className='navbar__title_bolder'>GitHub</span>
+                    <span className='navbar__title_bolder'>GitHub </span>
                     profiles
                 </p>
             </nav>
