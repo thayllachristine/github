@@ -1,0 +1,10 @@
+@import './../../../styles/helpers/variables.scss';
+@import './../../../styles/helpers/mixins.scss';
+@import './../../../styles/helpers/placeholders.scss';
+
+.row {
+    @media (min-width: 768px) {
+        @include width(960px);
+        @include flexbox;
+    }
+}
