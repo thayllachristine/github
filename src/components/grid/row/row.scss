@@ -5,6 +5,7 @@
 .row {
     @media (min-width: 768px) {
         @include width(960px);
+        padding: 25px;
         @include flexbox;
     }
 }
