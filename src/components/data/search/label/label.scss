@@ -9,6 +9,10 @@ label {
     border: 1px solid #ccc;
     @include borderRadius(2px);
     margin: 25px;
+
+    @media (min-width: 768px) {
+        justify-content: flex-start;
+    }
 }
 
 img {

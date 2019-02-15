@@ -4,6 +4,9 @@
 
 .options { 
     @include flexbox;
+    @media (min-width: 768px) {
+        @include width(325px);
+    }
 
     &__1st,
     &__2nd {

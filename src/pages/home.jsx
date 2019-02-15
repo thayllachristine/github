@@ -10,14 +10,7 @@ import Input from './../components/data/search/input/input.jsx'
 import Repo from '../components/data/repo/repo.jsx'
 
 
-const kkk = {
-    border: '1px solid red',
-}
-
-
 export default class Home extends Component {
-
-
     render() {
         return (
             <React.Fragment>
