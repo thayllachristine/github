@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import repo from '../../../resource/repo.jsx'
 import code from './code.svg'
+import branch from './git-branch.svg'
 import './repo.scss'
 import Options from '../options/options.jsx';
 
@@ -45,11 +46,16 @@ const RepoListItems = (props) => {
                 <div className='repo__top'>
                     <img src={code} alt='Code symbol' className='repo__language-img' />
                     <p className='repo__language'>{info.language}</p>
+                    {
+                        info.forks === 0
+                            ? ``
+                            : <img src={branch} alt='Git branch symbol' className='repo__forks-img' />
+                    }
                     <p className='repo__forks'>{info.forks === 0 ? `` : info.forks}</p>
                 </div>
             </li>
             <div className='repo__line' />
-        </React.Fragment>
+        </React.Fragment >
     )
     return (
         <ul className='repo-list'>

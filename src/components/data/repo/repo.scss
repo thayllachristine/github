@@ -3,6 +3,10 @@
 @import './../../../styles/helpers/placeholders.scss';
 
 .repo { 
+    @media (min-width: 768px) {
+        @include width(1005px);
+    }
+
     &-list {
         &__item {
             list-style: none;
