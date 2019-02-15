@@ -8,16 +8,20 @@
     @include flexbox;
     @extend %justContentCenter;
     @extend %alignItemsCenter;
+    @media (min-width: 768px) {
+        @include height(300px);
+        @include width(250px);
+        flex-direction: column;
+    }
     
     &__avatar { 
         @include width(75px);
         @include height(75px);
         @include borderRadius(100%);
         @extend %alignContentCenter;
-
         @media (min-width: 768px) {
-            @include width(100px);
-            @include height(100px);
+            @include width(125px);
+            @include height(125px);
         }
     }
 

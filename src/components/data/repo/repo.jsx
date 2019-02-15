@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import repo from '../../../resource/repo.jsx'
 import code from './code.svg'
 import './repo.scss'
+import Options from '../options/options.jsx';
 
 
 export default class Repo extends Component {
@@ -44,7 +45,7 @@ const RepoListItems = (props) => {
                 <div className='repo__top'>
                     <img src={code} alt='Code symbol' className='repo__language-img' />
                     <p className='repo__language'>{info.language}</p>
-                    <p className='repo__forks'>{info.forks}</p>
+                    <p className='repo__forks'>{info.forks === 0 ? `` : info.forks}</p>
                 </div>
             </li>
             <div className='repo__line' />

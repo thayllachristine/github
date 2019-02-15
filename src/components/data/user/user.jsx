@@ -26,15 +26,13 @@ export default class User extends Component {
                 })
             })
 
-            .catch((err) => {
-                console.log(err)
-            })
+            .catch((err) => { console.log(err) })
     }
 
     render() {
         return (
             <div className='user'>
-                <img src={this.state.avatar} alt='' className='user__avatar' />
+                <img src={this.state.avatar} alt='Avatar do usuário' className='user__avatar' />
                 <div className='user__infos'>
                     <p className='user__name'>{this.state.name}</p>
                     <p className='user__bio'>{this.state.bio}</p>
