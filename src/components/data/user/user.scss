@@ -35,6 +35,9 @@
     &__name,
     &__bio {
         @include width(175px);
+        @media (min-width: 768px) {
+            @include width(135px);
+        }
     }
     
     &__name {
