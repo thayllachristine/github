@@ -1,9 +1,9 @@
 {
-  "name": "superagendador-front-end-test",
+  "name": "github-api",
   "version": "1.0.0",
-  "description": "superagendador-front-end-test",
+  "description": "github-api",
   "main": "index.js",
-  "repository": "https://github.com/thayllachristine/superagendador-front-end-test.git",
+  "repository": "https://github.com/thayllachristine/github.git",
   "author": "Thaylla Christine",
   "scripts": {
     "start": "webpack-dev-server",
