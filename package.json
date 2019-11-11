@@ -24,13 +24,15 @@
     "file-loader": "^3.0.1",
     "node-sass": "*",
     "path": "^0.12.7",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
     "sass": "*",
     "sass-loader": "*",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   }
 }
