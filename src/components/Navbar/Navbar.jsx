@@ -10,6 +10,7 @@ const StyledNav = styled.nav`
 `;
 
 const StyledLogo = styled.img`
+  margin: 0 7.5px;
   width: 30px;
 `;
 
