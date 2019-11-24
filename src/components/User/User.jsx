@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 import getUser from '../../resources/getUser.js';
 
 const StUsr = styled.div`
@@ -35,7 +35,6 @@ const User = () => {
   useEffect(() => {
     getUser('thayllachristine')
       .then(r => {
-        console.log(r.data)
         setAvatar(r.data.avatar_url);
         setName(r.data.name);
         setBio(r.data.bio);
