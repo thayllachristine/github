@@ -1,7 +1,14 @@
-import React, { Component } from 'react'
-import './index.scss'
-import Home from './pages/home.jsx';
+import React, { Fragment } from 'react';
+import GlobalStyle from './helpers/GlobalStyle';
+import Navbar from './../src/components/Navbar';
+import Home from './pages/Home';
 
-export default class App extends Component {
-  render() { return <Home /> }
-}
+const App = () => (
+  <Fragment>
+    <GlobalStyle />
+    <Navbar />
+    <Home />
+  </Fragment>
+);
+
+export default App;
