@@ -7,11 +7,11 @@ const Grid = styled.div`
   display: flex;
 `;
 
-const Home = () => (
+const User = () => (
   <Grid>
     <User />
     <Repo />
   </Grid>
 );
 
-export default Home;
+export default User;
