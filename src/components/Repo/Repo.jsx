@@ -4,7 +4,6 @@ import getRepoList from './../../resources/getRepoList.js';
 import Octicon, { GitBranch, PrimitiveDot, Star } from '@primer/octicons-react';
 
 const Repos = styled.div`
-  border: 1px solid red;
   margin: 12.5px 0;
   padding: 10px 30px;
   width: 945px;
